@@ -1,9 +1,13 @@
-let num1= prompt("Enter the number");
-for(i=0;i<=1;i++){
-loop();
- }
-function loop(){
-    let num= num1*num1;
-    alert(`Square of ${num1} is :${num}`);
+let number1= +prompt("Enter a number you want to do square");
+
+for(i=0;i<number1;i++){
+ let value= parseFloat(prompt(`Enter number is ${i+1}: `))
+ console.log(value);
+ 
+function loop(number){
+    let num= number*number;
+    console.log(num);
+    alert(`Square of ${value} is :${num}`);
 }
-loop();
+loop(value);
+};
